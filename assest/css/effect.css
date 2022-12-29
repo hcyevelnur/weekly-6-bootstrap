@@ -1,0 +1,88 @@
+.link span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.link span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  
+.link:hover span {
+    padding-right: 25px;
+  }
+  
+.link:hover span:after {
+    opacity: 20;
+    right: 0;
+  }
+
+
+  #myBtn {
+    width: 90px;
+    height: 90px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #EF6436;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 60px;
+    transition: transform .3s ease-out;
+
+  }
+  
+  #myBtn:hover {
+    background-color: #d7592e;
+    transform: scale(1.1);
+}
+
+
+
+.image-1{
+    display: inline-block;
+}   
+
+figure{
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 0px;
+}
+
+.image-1 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-1 #zoom-in figure img{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.image-1 #zoom-in figure:hover img{
+    transform: scale(1.1);
+}
+
+.img-1-11{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+.img-1-11:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
